@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Babji Kilaru</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Babji Kilaru</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic (2).png" alt="Babji Kilaru profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Babji Kilaru</h1>
+        <p class="section__text__p2">Data Engineer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="location.href='https://linkedin.com/'"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3 years <br />Data Engineer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor's in Computer Science<br />Master's in Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Data Engineer with 3 years of experience in designing and implementing data solutions to support data-driven decision-making. Proficient in data acquisition, ETL processes, data modeling, and cloud data infrastructure management. Skilled in leveraging Python, SQL, and big data tools like Apache Spark and Hadoop to build scalable pipelines and optimize data workflows. Experienced with cloud platforms such as AWS for data warehousing, Redshift clusters, and on-premises to cloud migrations. Adept at using Agile methodologies for project delivery, collaborating with cross-functional teams, and ensuring data quality for analytics and reporting.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="margin-bottom: 0.1rem">Graduate Research Assistant</h2>
+            <p class="experience-sub-title" style="font-size: 1rem; margin-bottom: 0.1rem">University of Missouri-Kansas City</p>
+            <p class="experience-sub-title" style="font-size: 1rem; margin-bottom: 0.1rem">August 2022 - May 2023</p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Collected, cleaned, and analyzed large, complex datasets from multiple sources to support research and administrative projects, ensuring data integrity through regular audits and validation checks.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Utilized SQL and Python for ETL/ELT tasks, optimizing data extraction, transformation, and loading processes to enhance the efficiency of data workflows and improve accessibility across departments.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Developed and maintained interactive dashboards and reports using Tableau, MS Excel and Power BI, visualizing key performance indicators to facilitate data-driven decision-making</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Leveraged AWS services, including S3, Redshift, and Glue, to build scalable data storage solutions and automate data processing tasks in a cloud environment.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Employed big data tools such as Apache Spark, Hadoop, and Hive to process and analyze large datasets, enabling real-time insights and improving data processing speed.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title" style="margin-bottom: 0.1rem">Data Engineer</h2>
+            <p class="experience-sub-title" style="font-size: 1rem; margin-bottom: 0.1rem">KPIT Technologies</p>
+            <p class="experience-sub-title" style="font-size: 1rem; margin-bottom: 0.1rem">May 2020 - July 2022</p>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Developed and maintained ETL pipelines using Informatica power house, Python, and Apache Airflow for data extraction, transformation, and loading, ensuring data accuracy and integrity across workflows.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Optimized SQL query performance by indexing, partitioning tables, and refactoring complex queries, reducing data processing time by 40%.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Implemented data warehousing solutions on AWS, utilizing services such as Redshift, S3, and RDS for scalable data storage and processing.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Employed data modeling techniques, including star and snowflake schema design, to organize data for efficient querying and reporting in data warehouses.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Created interactive dashboards and reports in Plotly Dash, Tableau and Power BI to visualize key performance indicators (KPIs) and business metrics, driving data-driven decision-making.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Built and deployed machine learning models using Python libraries like Scikit-learn and TensorFlow, and leveraged AWS Sage Maker for scalable model training and deployment.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Proficient in Agile software development life cycle (SDLC) methodologies, utilizing tools such as Jira to facilitate sprint planning, backlog management, and seamless collaboration within cross-functional teams. Ensures efficient delivery and adaptability in dynamic environments.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Implemented CI/CD pipelines using tools like Jenkins and GitLab, automating code deployments and ensuring seamless integration and delivery processes, which resulted in a 30% reduction in deployment time and improved system reliability.</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                  style="height: 1.2rem;"
+                />
+                <div>
+                  <p>Enhanced data processing by handling diverse file formats, including CSV, JSON, Parquet, Avro, and ORC, to improve storage efficiency, accelerate query performance, and enable smooth integration within data pipelines.</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./index.html#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone.png"
+            alt="Phone icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="">+1(913)-363-5585</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:babjikilaru2001@gmail.com.com">babjikilaru2001@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
